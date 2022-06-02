@@ -14,7 +14,7 @@ from matplotlib import pyplot as plt
 
 def img_to_rgb(src_img_path: str, result_img_path: str):
     """
-    使用opencv打开并处理图片，使用Matplotlib保存图片
+    使用opencv打开并处理图片，然后使用Matplotlib保存图片
 
     Parameters
     ----------
