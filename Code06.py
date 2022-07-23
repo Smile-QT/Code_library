@@ -1,17 +1,41 @@
 
 # 将若干张图片拼成一张图片展示
-# 这里的imags存放着一批图片，这里为了方便起见，就设置成列表。
 # 展示出来的图片的宽度：nrow, 高度：len(imge)/nrow
-import torchvision
 import torch
-imgs = list()
-imgs = ['F:/Graduate students grade three/postgraduate studies/first year of postgraduate study/申报研究生创新项目/图片/01.jpg', 'F:/Graduate students grade three/postgraduate studies/first year of postgraduate study/申报研究生创新项目/图片/02.jpg']
-imgs = torch.as_tensor(imgs)
-grid_imgs = torchvision.utils.make_grid(imgs, nrow = 1)
-import matplotlib as plt
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
+import torchvision
+import matplotlib.pyplot as plt
 
-plt.show(grid_imgs)
 
+def image_show(images):
+    images = images.numpy()
+    images = images.transpose((1, 2, 0))
+    print(images.shape)
+    plt.imshow(images)
+    plt.show()
+
+
+def main():
+    train_dataset = datasets.MNIST(root='./datasets', train=False, download=True,
+                                   transform=transforms.ToTensor())
+    train_loader = DataLoader(train_dataset, batch_size=4, shuffle=False)
+
+    device = torch.device('cuda:0')
+    # for batch_idx, (inputs, targets) in enumerate(train_loader):
+    #     inputs = inputs.to(device)
+    #     print(inputs.shape)
+    inputs, targets = next(iter(train_loader))
+    print(inputs.shape)
+    print(targets.shape)
+
+    images = torchvision.utils.make_grid(inputs)
+    print(f'images.shape:{images.shape}')
+    image_show(images)
+
+
+if __name__ == '__main__':
+    main()
 
 
 
