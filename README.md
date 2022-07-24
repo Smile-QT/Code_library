@@ -204,7 +204,7 @@
 ##### requires_grad=Ture：不冻结权重
 
 （53）Code53.py: 
-
+##### 计算两张图片之间的PSNR和SSIM值
 
 （54）Code54.py: 
 
