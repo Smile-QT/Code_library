@@ -210,7 +210,7 @@
 ##### Tensor 和 NumPy变量互相转化
 
 （55）Code55.py: 
-
+##### 使用opencv读取彩色图片，并将图片转化成RGB格式
 
 （56）Code56.py: 
 
