@@ -207,7 +207,8 @@
 ##### 计算两张图片之间的PSNR和SSIM值
 
 （54）Code54.py: 
-##### Tensor 和 NumPy变量互相转化
+##### Tensor 和 NumPy 变量互相转化
+##### tuple 和 list 变量相互转化
 
 （55）Code55.py: 
 ##### 使用opencv读取彩色图片，并将图片转化成RGB格式
