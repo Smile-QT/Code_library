@@ -1,4 +1,3 @@
-
 # X轴向左边平移图像大小的1/5，Y轴向下平移图像大小的的1/4
 
 # 使用opencv处理图片
@@ -7,7 +6,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-def image_panning(src_img_path: str, result_img_path: str, Horizontal_distance_rate, vertical_distance_rate):
+def image_panning(src_img_path: str, result_img_path: str, Horizontal_distance_rate: float, vertical_distance_rate: float):
     """
     使用opencv库中的方法读取图片，
     并将图片在水平方向平移图像大小的Horizontal_distance_rate，在垂直方向进行平移图像大小的
