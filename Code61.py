@@ -1,23 +1,37 @@
 # 将图片逆时针旋转60度，并缩小为0.5倍
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+#@Time : 2022/6/2 13:36
+#@Author : Smile
+#@File : code1_2.py
+#@Software: PyCharm
+@Description:
+"""
+
 import cv2
 import numpy as np
 from cv2 import getRotationMatrix2D
 from matplotlib import pyplot as plt
+
+
 def Rotate_counterclockwise_and_shrink(src_img_path: str, result_img_path: str, counterclockwise_angle: int, fx_shrink: float, fy_shrink: float):
     """
     使用opencv库中的方法读取图片，
     并将图片逆时针旋转counterclockwise_angle度，
     横向缩放为原来的fx_shrink倍，纵向缩放为原来的fx_shrink倍，
     并使用Matplotlib将转化后的图片保存在指定位置。
+
     Parameters
     ----------
     src_img_path：str
-    原始图片的保存位置
+        原始图片的保存位置
     result_img_path:str
-    转化后的图片的保存位置
+        转化后的图片的保存位置
+
     Returns
     -------
-    没有返回值
+        没有返回值
     """
     src_img = cv2.imread(src_img_path)
     # 读取有色图片,读取得到的图片格式是BGR
@@ -40,7 +54,6 @@ def Rotate_counterclockwise_and_shrink(src_img_path: str, result_img_path: str, 
     plt.show()
 
 
-
 def main():
     src_img_path = '../photo/src_picture1_3.jpg'
     result_img_path = '../photo/result_picture1_3.jpg'
@@ -48,8 +61,23 @@ def main():
     fx_shrink = np.float32(0.5)
     fy_shrink = np.float32(0.5)
     Rotate_counterclockwise_and_shrink(src_img_path, result_img_path, counterclockwise_angle, fx_shrink, fy_shrink)
+
+
 if __name__ == '__main__':
-        main()
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
