@@ -1,10 +1,9 @@
-
 # 将图片逆时针旋转60度，并缩小为0.5倍
 import cv2
 import numpy as np
 from cv2 import getRotationMatrix2D
 from matplotlib import pyplot as plt
-def Rotate_counterclockwise_and_shrink(src_img_path: str, result_img_path: str, counterclockwise_angle, fx_shrink, fy_shrink):
+def Rotate_counterclockwise_and_shrink(src_img_path: str, result_img_path: str, counterclockwise_angle: int, fx_shrink: float, fy_shrink: float):
     """
     使用opencv库中的方法读取图片，
     并将图片逆时针旋转counterclockwise_angle度，
