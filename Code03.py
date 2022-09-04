@@ -1,4 +1,6 @@
 # 爬取一个抖音视频的评论，并将一些表情包删除了
+# https://blog.csdn.net/python_TB/article/details/124303116
+# https://blog.csdn.net/dubo_csdn/article/details/124014404
 import random
 from selenium import webdriver
 import time
