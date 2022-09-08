@@ -301,6 +301,28 @@
 ##### https://www.bilibili.com/video/BV1tA411c7Vg?spm_id_from=333.337.search-card.all.click
 
 （83）Code83.py:
+##### 获取一个指定文件夹下所有文件的完整路径
+
+（84）Code84.py:
+##### 将mp4文件转为mp3音频文件并返回其文件路径,生成路径仍在原路径中(需要先下载moviepy库)
+
+（85）Code85.py:
+
+（86）Code86.py:
+
+（87）Code87.py:
+
+（88）Code88.py:
+
+（89）Code89.py:
+
+（90）Code90.py:
+
+（91）Code91.py:
+
+（92）Code92.py:
+
+（93）Code93.py:
 
 
 
