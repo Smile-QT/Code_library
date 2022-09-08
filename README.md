@@ -297,7 +297,8 @@
 ##### 批量爬取抖音视频的文案
 
 （82）Code82.py:
-
+##### 根据提供的批量抖音网址，下载抖音视频
+##### https://www.bilibili.com/video/BV1tA411c7Vg?spm_id_from=333.337.search-card.all.click
 
 （83）Code83.py:
 
