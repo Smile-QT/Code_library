@@ -283,6 +283,8 @@
 ##### excel表中的行和列都是从1开始的
 
 （78）Code78.py:
+##### 批量爬取抖音评论
+##### chrome驱动程序选择网址：https://blog.csdn.net/python_TB/article/details/124303116
 
 
 （79）Code79.py:
